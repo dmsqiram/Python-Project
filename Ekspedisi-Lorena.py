@@ -75,7 +75,7 @@ while True:
     while(user <= 0):
 
          print("\nWARNING : Kurang Dari 0 Tidak Diperbolehkan!!\n")
-         user = inputangka(">> Masukkan Kode Tujuan   : ")
+         user = inputangka(">> Masukkan Jumlah Tujuan : ")
 
          if(user > 0):
              break
