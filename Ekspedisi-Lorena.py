@@ -24,10 +24,10 @@ def inputulang(pesan):
 
 # fungsi validasi inputan hanya berupa huruf (a,b,c,d)
 def inputhuruf(huruf):
-      while(huruf != "a" and huruf != "b" and huruf != "c" and huruf != "d"):
+      while(huruf != "a" and huruf != "b"):
         ulang = input(">> Masukkan Kode Tujuan   : ")
 
-        if(ulang == "a" or ulang == "b" or ulang == "c" or ulang == "d"):
+        if(ulang == "a" or ulang == "b"):
             return ulang
         else:
             print("\nWARNING : Masukkan Input Sesuai Tabel List!!\n")
@@ -53,18 +53,16 @@ while True:
     print("|                                |")
     print("| A). SURABAYA 169KM Rp.2.500/KM |")
     print("| B). BANDUNG  452KM Rp.4.000/KM |")
-    print("| C). SEMARANG 385KM Rp.3.500/KM |")
-    print("| D). DENPASAR 315km Rp.4.500/KM |")
     print("|                                |")
     print("|--------------------------------|")
     print("+================================+")
     print()
 
     # variabel array 
-    kota       = ["Surabaya","Bandung","Semarang","Denpasar"]
-    harga      = [2500,4000,3500,4500]
-    kode       = ["a","b","c","d"]
-    jarak      = [169,452,385,315]
+    kota       = ["Surabaya","Bandung"]
+    harga      = [2500,4000]
+    kode       = ["a","b"]
+    jarak      = [169,452]
     list_kota  = []
     list_harga = []
     list_jarak = []
