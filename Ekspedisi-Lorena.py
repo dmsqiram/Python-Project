@@ -23,7 +23,7 @@ def inputulang(pesan):
             print("\nWARNING : Masukkan Input Perintah Berupa [Y/T]!!\n")
             pass
 
-# fungsi validasi inputan hanya berupa huruf (a,b,c,d)
+# fungsi validasi inputan hanya berupa huruf (a,b)
 def inputhuruf(huruf):
       while(huruf != "a" and huruf != "b"):
         ulang = input(">> Masukkan Kode Tujuan   : ")
@@ -117,7 +117,7 @@ while True:
         print("Loading...")
     
     print("Resi Transaksi Sedang Dibuat...")
-    time.sleep(2)
+    time.sleep(2.5)
     
     # print pembayaran
     print("\n+======= PRINT PEMBAYARAN =======+\n")
