@@ -1,5 +1,6 @@
 # import library
 from os import system, __name__
+import time
 
 # fungsi validasi inputan angka hanya berupa integer
 def inputangka(angka):
@@ -76,7 +77,7 @@ while True:
          print("\nWARNING : Kurang Dari 0 Tidak Diperbolehkan!!\n")
          user = inputangka(">> Masukkan Kode Tujuan   : ")
 
-         if(user <= 0):
+         if(user > 0):
              break
          else:
              continue
@@ -103,10 +104,21 @@ while True:
             total_biaya = jarak[no_index] * harga[no_index]
             print(">> Total Biaya  :",uang(total_biaya))
             list_total.append(total_biaya)
-        
+            print()   
             i += 1
             break
+    
+    # Loading proses pembuatan resi transaksi
+    time.sleep(2.5)
 
+    delay = 3
+    for i in range((delay)):
+        time.sleep(0.6)
+        print("Loading...")
+    
+    print("Resi Transaksi Sedang Dibuat...")
+    time.sleep(2)
+    
     # print pembayaran
     print("\n+======= PRINT PEMBAYARAN =======+\n")
     print("(1) Jumlah Tujuan  :",user,"Tempat")
