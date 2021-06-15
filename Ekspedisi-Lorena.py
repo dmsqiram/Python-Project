@@ -114,16 +114,20 @@ while True:
     print("(1) Jumlah Tujuan  :",user,"Tempat")
     print("----------------------------------")
     print("(2) Daftar Tujuan")
-
+    
+    urutan = 1
     i = 0
     while(i < user):
         print()
+        print("    ========= TUJUAN (" + str(urutan) + ") =========")
         print("    Kota Tujuan    :",list_kota[i])
         print("    Jarak Kota     :",list_jarak[i],"Km")
         print("    Harga/Km       :",uang(list_harga[i]))
         total = list_harga[i] * list_jarak[i]
         print("    Total          :",uang(total))
+        print("    ------------------------------")
         list_total[i]
+        urutan += 1
         i += 1
 
     print("----------------------------------")
