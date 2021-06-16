@@ -99,7 +99,7 @@ while True:
          print("\nWARNING : Hanya Tersedia 5 Jenis Oli, Masukkan Hanya 1-5!!\n")
          user = inputangka(">> Jumlah Jenis Oli Yang Dibeli : ")
 
-         if(user <= 0):
+         if(user <= 0 or user > 5):
              continue
          else:
              break
