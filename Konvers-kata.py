@@ -1,3 +1,6 @@
+# Mengubah kata dari huruf kecil menjadi huruf kapital disetiap huruf depannya
+# terdapat array daftar kata yang tidak diperbolehkan diberi huruf kapital
+
 kata = input("\n>> Masukkan Kata : ")
 array_kata = kata.split(" ")
 list_kata = []
