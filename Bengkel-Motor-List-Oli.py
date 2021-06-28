@@ -72,6 +72,7 @@ def daftar_brg():
     print("+=====================================+")
     print()
 
+# cetak resi berupa txt file
 def cetak_resi():
 
     resi = open("resi.txt","w")
@@ -257,7 +258,7 @@ while True:
     time.sleep(2.8)
     _ = system('cls')
     
-    
+    # print hasil transaksi ke layar
     print("+========== PRINT PEMBAYARAN =========+\n")
     print("-> Jumlah Jenis Oli :",user,"Jenis")
     print("-> Jumlah/Item      :",sum(list_qty),"Liter")
@@ -297,7 +298,7 @@ while True:
     print("-> Total Biaya      :",uang(int(total_akhir)))
     print("\n+============ TERIMA KASIH ===========+\n")
 
-    # cetak pembayaran
+    # cetak pembayaran berupa txt file
     cetak_resi()
 
     # input ulang program oleh user
