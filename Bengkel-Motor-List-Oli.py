@@ -75,7 +75,7 @@ def daftar_brg():
 # cetak resi berupa txt file
 def cetak_resi():
 
-    resi = open("resi.txt","w")
+    resi = open("Resi.txt","w")
 
     resi.write("+========== PRINT PEMBAYARAN =========+\n\n")
     resi.write("-> Jumlah Jenis Oli : " + str(user) + " Jenis\n")
