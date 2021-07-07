@@ -5,23 +5,27 @@ from datetime import date, datetime
 
 # format nama
 def formatnama(nama):
-    array_kata = nama.split(" ")
-    list_kata = []
-    panjang_kata = len(array_kata)
+    if(nama.istitle() == False):
+        array_kata = nama.split(" ")
+        list_kata = []
+        panjang_kata = len(array_kata)
 
-    i = 0
-    while(i < panjang_kata):
+        i = 0
+        while(i < panjang_kata):
 
-        cek_kata = array_kata[i].istitle()
-        if(cek_kata == False):
-            konvers = array_kata[i].capitalize()
-            list_kata.append(konvers)
-            i += 1
-        else:
-            break
+            cek_kata = array_kata[i].istitle()
+            if(cek_kata == False):
+                konvers = array_kata[i].capitalize()
+                list_kata.append(konvers)
+                i += 1
+            else:
+                break
 
-    hasil = " ".join(list_kata)
-    return hasil
+        hasil = " ".join(list_kata)
+        return hasil
+        
+    else:
+        return nama
 
 
 # penanganan masalah agar user tidak menginput sembarang key
@@ -199,7 +203,8 @@ while True:
     print("<> Jenis Kelamin     :", jenis_kelamin)
     print("<> Status Pernikahan :", sts)
     print("<> Gaji Pokok        :", uang(int(gaji[gol - 1])))
-    print("<> Tunjangan Istri   :", uang(int(tunjangan_istri)))
+    if(jenis_kelamin == "Laki-laki"):
+        print("<> Tunjangan Istri   :", uang(int(tunjangan_istri)))
     print("<> Tunjangan Anak    :", uang(int(tunjangan_anak)), "\n")
     print(">> Gaji Bruto        :", uang(int(gaji_bruto)))
     print("_"*50, "\n")
