@@ -55,7 +55,7 @@ def inputmakanan(pesan):
         if(ulang == "a" or ulang == "b" or ulang == "c" or ulang == "d" or ulang == "e" or ulang == "f"):
             return ulang
         else:
-            print("\nWARNING : Masukkan Inputan Sesuai Pilihan Menu\n")
+            print("\nWARNING!! : Masukkan Inputan Sesuai Pilihan Menu\n")
             pass
 
 
@@ -67,7 +67,7 @@ def inputminuman(pesan):
         if(ulang == "a" or ulang == "b" or ulang == "c" or ulang == "d" or ulang == "e"):
             return ulang
         else:
-            print("\nWARNING : Masukkan Inputan Sesuai Pilihan Menu\n")
+            print("\nWARNING!! : Masukkan Inputan Sesuai Pilihan Menu\n")
             pass
 
 
@@ -79,7 +79,7 @@ def inputpilihan(pesan):
         if(ulang == "Y" or ulang == "y" or ulang == "T" or ulang == "t"):
             return ulang
         else:
-            print("\nWARNING : Masukkan Input Perintah Berupa [Y/T]!!\n")
+            print("\nWARNING!! : Masukkan Input Perintah Berupa [Y/T]\n")
             pass
 
 
@@ -91,7 +91,7 @@ def inputpilihan_mkn(pesan):
         if(ulang == "Y" or ulang == "y" or ulang == "T" or ulang == "t"):
             return ulang
         else:
-            print("\nWARNING : Masukkan Input Perintah Berupa [Y/T]!!")
+            print("\nWARNING!! : Masukkan Input Perintah Berupa [Y/T]")
             pass
 
 
@@ -103,7 +103,7 @@ def inputpilihan_mnm(pesan):
         if(ulang == "Y" or ulang == "y" or ulang == "T" or ulang == "t"):
             return ulang
         else:
-            print("\nWARNING : Masukkan Input Perintah Berupa [Y/T]!!")
+            print("\nWARNING!! : Masukkan Input Perintah Berupa [Y/T]")
             pass
 
 
@@ -115,7 +115,7 @@ def inputtambahan_mkn(pesan):
         if(ulang == "Y" or ulang == "y" or ulang == "T" or ulang == "t"):
             return ulang
         else:
-            print("\nWARNING : Masukkan Input Perintah Berupa [Y/T]!!")
+            print("\nWARNING!! : Masukkan Input Perintah Berupa [Y/T]")
             pass
 
 
@@ -127,7 +127,7 @@ def inputtambahan_mnm(pesan):
         if(ulang == "Y" or ulang == "y" or ulang == "T" or ulang == "t"):
             return ulang
         else:
-            print("\nWARNING : Masukkan Input Perintah Berupa [Y/T]!!")
+            print("\nWARNING!! : Masukkan Input Perintah Berupa [Y/T]")
             pass
 
 
@@ -251,7 +251,7 @@ while True:
     print("+=========== DAFTAR MENU KANTIN FTI ===========+")
     print("|----------------------------------------------|")
     print("|                                              |")
-    print("| PETUNJUK PEMESANAN     :                     |")
+    print("| PETUNJUK PEMESANAN       :                   |")
     print("|                                              |")
     print("| 1). Ketik 1 Untuk Memilih Menu Makanan       |")
     print("| 2). Ketik 2 Untuk Memilih Menu Minuman       |")
@@ -320,9 +320,9 @@ while True:
             while(x == True):
                 print(
                     "\nWARNING!! : Makanan Tersebut Telah Terdaftar Di List Anda, Silahkan Pilih Makanan yang Lain\n")
-                inpt_kode = inputmakanan(">> Masukkan Kode Makanan : ")
+                ipt_makanan = inputmakanan(">> Masukkan Kode Makanan : ")
 
-                x = inpt_kode in list_kode_mkn
+                x = ipt_makanan in list_kode_mkn
                 if(x == False):
                     break
                 else:
@@ -663,7 +663,7 @@ while True:
 
     if(bayar < tot):
         while(bayar < tot):
-            print("\nWARNING!! : Uang Pembayaran Masih Kurang\n")
+            print("\n\nWARNING!! : Uang Pembayaran Masih Kurang\n")
             bayar = inputangka_bayar(">> Uang Pembayaran  : ")
 
             if(bayar >= tot):
